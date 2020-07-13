@@ -20,9 +20,9 @@ CREATE TABLE todos(
 
 INSERT INTO users(isAdmin, u_name, password)
 VALUES(true, 'eranlev1010@gmail.com', 'eran1234'),
-VALUES(false, 'snirisrael2020@gmail.com', 'snir12');
+(false, 'snirisrael2020@gmail.com', 'snir12');
 
 INSERT INTO todos(description, isCompleted)
 VALUES('Clean my room', false),
-VALUES('walk with my dog', true);
-VALUES('Produce new music', false);
+('walk with my dog', true),
+('Produce new music', false);
