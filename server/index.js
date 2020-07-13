@@ -41,7 +41,6 @@ app.get("/api/todos", onlyUsers, async (req, res) => {
 //Add a todo:
 app.post("/api/todos", onlyAdmins, async (req, res) => {
     const { description, isCompleted } = req.body;
-    console.log( 'req.body' , req.body)
     let q = `INSERT INTO todos (description, isCompleted)
     VALUES ('${description}',${isCompleted})`
     try {
@@ -73,7 +72,6 @@ app.put("/api/todos", onlyUsers, async (req, res) => {
 //Delete todo:
 app.delete("/api/todos/:id", onlyAdmins, async (req, res) => {
     const { id } = req.params;
-    console.log(id)
     let q = `DELETE FROM todos WHERE id = ${id}`
     try {
         const results = await Query(q)
