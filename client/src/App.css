@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.login-form {
+  border: 1px solid rgb(218, 216, 216);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  height: 60%;
+}
+
+.login-form > input {
+  width: 200px;
+  text-align: center;
+}
+
+.nav {
+  padding: auto;
+  padding-right: 30px;
+  background-color: rgb(238, 235, 235);
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sign-out {
+  width: 100px;
+  height: 50px;
+}
+
+.admin-dashboard-div {
+  position: absolute;
+  top: 80px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.admin-dashboard-div > * {
+  margin: 50px;
+}
+
+.add-todo {
+  width: 75%;
+  display: flex;
+}
+
+.btn-div {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.add-btn {
+  background-color: rgb(116, 116, 248);
+  width: 100%;
+}
+
+.todo-input {
+  width: 75%;
+  border: 1px solid rgb(228, 224, 224);
+  border-radius: 2px;
+  text-align: center;
+}
+
+.listGroup {
+  width: 75%;
+}
+
+.todo {
+  width: 100%;
+  display: flex !important;
+  justify-content: space-between;
+  padding: 35px 40px;
+}
+
+.todo > span {
+  display: flex;
+  align-items: center;
+  width: 300px;
+}
+
+.btns-div {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.todo .btns-div button {
+  margin: 5px;
+}
+
+@media (max-width: 500px) {
+
+  .todo > span {
+    display: block;
+    width: 30px;
+  }
+
+  .todo .btns-div button {
+    font-size: small;
+    width: 60px;
+    height: 40px;
+  }
+
+  .todo > * {
+    margin: 5px;
+  }
+
+  .listGroup {
+    width: 100%;
+  }
+
+  .login-form {
+    width: 70%;
+    height: 60%;
+  }
+
+  .login-form > input {
+    width: 70px;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .login-form span {
+    text-align: center;
+  }
+
+  .login-form button {
+    font-size: 12px;
+  }
+
+}
